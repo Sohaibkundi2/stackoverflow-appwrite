@@ -1,0 +1,6 @@
+export const db = "stackoverflow-appwrite"
+export const answerCollection = "answers"
+export const questionCollection = "questions"
+export const commentCollection = "comments"
+export const voteCollection = "votes"
+export const questionAttachmentBucket = "question-attachment"
