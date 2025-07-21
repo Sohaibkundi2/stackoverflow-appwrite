@@ -2,7 +2,7 @@ import {questionAttachmentBucket  } from '../name';
 import { Permission } from 'appwrite';
 import {  storage } from './config';
 
-export const getOrCreateCollection = async()=>{
+export const getOrCreateStorage = async()=>{
 
     try {
         await storage.getBucket(questionAttachmentBucket)

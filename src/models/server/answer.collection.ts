@@ -18,7 +18,7 @@ console.log('answer collection created')
 
 // add attributes
     await Promise.all([
-        databases.createStringAttribute(db, answerCollection, "content", 10000, true, "", true),
+        databases.createStringAttribute(db, answerCollection, "content", 10000, true, undefined, true),
         databases.createStringAttribute(db, answerCollection, "questionId", 256, true),
         databases.createStringAttribute(db, answerCollection, "authorId", 256, true,)
     ])
