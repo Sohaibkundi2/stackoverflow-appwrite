@@ -13,9 +13,9 @@ export default async function getOrConnectDb(){
         try {
             await databases.create(db,db)
             console.log('database created')
-            Promise.all([
+            await Promise.all([
                 createAnswerCollection(),
-                createQuestionCollection,
+                createQuestionCollection(),
                 createCommentCollection(),
                 createVoteCollection()
             ])
